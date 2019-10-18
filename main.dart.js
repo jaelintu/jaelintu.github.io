@@ -34858,10 +34858,10 @@ gjv:function(){return!0},
 ka:function(){var u=0,t=P.Y(-1),s,r
 var $async$ka=P.U(function(a,b){if(a===1)return P.V(b,t)
 while(true)switch(u){case 0:P.e5("========= test")
-s=B.OV("https://fudao.qq.com/cgi-bin/getPreClassArticles?page=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",5000,"json",P.b4(["host","fudao.qq.com","accept","*","referer","https://fudao.qq.com/"],P.h,null),"get",1000,C.hu)
+s=B.OV("jsbridge://edu/setCenterTitle?p=%7B%22text%22%3A%22%E9%B1%BC%E9%A5%BC%22%7D#2",5000,"json",P.b4(["host","fudao.qq.com","accept","*","referer","https://fudao.qq.com/"],P.h,null),"post",1e5,C.hu)
 P.e5("start")
 u=2
-return P.a0(U.Pl(s).pG(0,"https://fudao.qq.com/cgi-bin/getPreClassArticles?page=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",null),$async$ka)
+return P.a0(U.Pl(s).pG(0,"jsbridge://edu/setCenterTitle?p=%7B%22text%22%3A%22%E9%B1%BC%E9%A5%BC%22%7D#2",null),$async$ka)
 case 2:r=b
 P.e5("end")
 P.e5(r.a)
