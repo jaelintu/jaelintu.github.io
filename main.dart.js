@@ -36445,7 +36445,7 @@ P.co(q.a)
 return P.Y(null,t)}})
 return P.Z($async$kE,t)},
 M:function(a){var u=this,t=null,s=L.lg(u.a.c,t)
-return new M.pz(new E.mR(s,new P.S(1/0,56),t),new T.hF(C.a2,t,t,T.VL(H.c([L.lg("You have pushed the button this many times:",t),L.lg(""+u.y,K.aF(a).y2.d),new U.o5(new L.uN("empty_course.png"),100,100,t),u.AS(),u.I9()],[N.aB]),C.jp),t),E.R8(L.Rf(C.nD),!1,u.gDw(),"Increment"),t)},
+return new M.pz(new E.mR(s,new P.S(1/0,56),t),new T.hF(C.a2,t,t,T.VL(H.c([L.lg("You have pushed the button this many times:",t),L.lg(""+u.y,K.aF(a).y2.d),new U.o5(new L.uN("images/empty_course.png"),100,100,t),u.AS(),u.I9()],[N.aB]),C.jp),t),E.R8(L.Rf(C.nD),!1,u.gDw(),"Increment"),t)},
 AS:function(){var u=null
 return new N.yq(new F.L4(this),u,u,u,u,u,u,u,u,u,u,u,L.lg("\u70b9\u51fb",u),u,u,C.a5,u,!1,u,u)},
 I9:function(){var u="https://fudao.qq.com/cgi-bin/getPreClassArticles?page=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",t=B.Qw(u,5000,"json",P.bd(["host","fudao.qq.com","accept","*","referer","https://fudao.qq.com/"],P.h,null),"get",1000,C.hz)
