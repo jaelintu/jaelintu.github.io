@@ -9811,11 +9811,12 @@ BU:function BU(a){this.a=a},
 oF:function oF(a,b){this.c=a
 this.a=b},
 rB:function rB(a,b){var _=this
+_.y=12
 _.dw$=a
 _.a=null
 _.b=b
 _.c=null},
-L4:function L4(){},
+L4:function L4(a){this.a=a},
 L5:function L5(){},
 uc:function(){var u=0,t=P.a_(-1),s,r,q,p,o,n,m
 var $async$uc=P.U(function(a,b){if(a===1)return P.X(b,t)
@@ -36430,22 +36431,23 @@ F.oF.prototype={
 aP:function(){return new F.rB(null,C.p)}}
 F.rB.prototype={
 gjW:function(){return!0},
-kE:function(){var u=0,t=P.a_(-1),s,r
+kE:function(){var u=0,t=P.a_(-1),s=this,r,q
 var $async$kE=P.U(function(a,b){if(a===1)return P.X(b,t)
-while(true)switch(u){case 0:P.co("========= test")
-s=B.Qw("https://fudao.qq.com/cgi-bin/getPreClassArticles?page=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",5000,"json",P.bd(["host","fudao.qq.com","accept","*","referer","https://fudao.qq.com/"],P.h,null),"get",1e5,C.hz)
+while(true)switch(u){case 0:++s.y
+P.co("========= test")
+r=B.Qw("https://fudao.qq.com/cgi-bin/getPreClassArticles?page=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",5000,"json",P.bd(["host","fudao.qq.com","accept","*","referer","https://fudao.qq.com/"],P.h,null),"get",1e5,C.hz)
 P.co("start")
 u=2
-return P.a2(U.R_(s).qn(0,"https://fudao.qq.com/cgi-bin/getPreClassArticles?page=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",null),$async$kE)
-case 2:r=b
+return P.a2(U.R_(r).qn(0,"https://fudao.qq.com/cgi-bin/getPreClassArticles?page=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",null),$async$kE)
+case 2:q=b
 P.co("end")
-P.co(r.a)
+P.co(q.a)
 return P.Y(null,t)}})
 return P.Z($async$kE,t)},
 M:function(a){var u=this,t=null,s=L.lg(u.a.c,t)
-return new M.pz(new E.mR(s,new P.S(1/0,56),t),new T.hF(C.a2,t,t,T.VL(H.c([L.lg("You have pushed the button this many times:",t),L.lg("12",K.aF(a).y2.d),new U.o5(new L.uN("empty_course.png"),100,100,t),u.AS(),u.I9()],[N.aB]),C.jp),t),E.R8(L.Rf(C.nD),!1,u.gDw(),"Increment"),t)},
+return new M.pz(new E.mR(s,new P.S(1/0,56),t),new T.hF(C.a2,t,t,T.VL(H.c([L.lg("You have pushed the button this many times:",t),L.lg(""+u.y,K.aF(a).y2.d),new U.o5(new L.uN("empty_course.png"),100,100,t),u.AS(),u.I9()],[N.aB]),C.jp),t),E.R8(L.Rf(C.nD),!1,u.gDw(),"Increment"),t)},
 AS:function(){var u=null
-return new N.yq(new F.L4(),u,u,u,u,u,u,u,u,u,u,u,L.lg("\u70b9\u51fb",u),u,u,C.a5,u,!1,u,u)},
+return new N.yq(new F.L4(this),u,u,u,u,u,u,u,u,u,u,u,L.lg("\u70b9\u51fb",u),u,u,C.a5,u,!1,u,u)},
 I9:function(){var u="https://fudao.qq.com/cgi-bin/getPreClassArticles?page=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",t=B.Qw(u,5000,"json",P.bd(["host","fudao.qq.com","accept","*","referer","https://fudao.qq.com/"],P.h,null),"get",1000,C.hz)
 P.co("start")
 return new B.nY(U.R_(t).qn(0,u,null),new F.L5(),null,[[U.b3,,]])},
@@ -36453,8 +36455,9 @@ $aaa:function(){return[F.oF]}}
 F.L4.prototype={
 $0:function(){P.co("=============  \u52a0\u6cd5 =============")
 P.co(self.addNumbers(4,5))
+var u="\u5f53\u524dcount "+this.a.y
 P.co("=============  \u8bf7\u6c42 =============")
-P.co(self.getFromJS())},
+P.co(self.getFromJS(u))},
 $C:"$0",
 $R:0,
 $S:0}
