@@ -8341,34 +8341,35 @@ t.a=""
 e.H(0,new X.yA(t))
 X.yB(u+t.a,d,b)},
 yB:function(a,b,c){return X.a1b(a,b,c)},
-a1b:function(a,b,c){var u=0,t=P.W(-1),s,r=2,q,p=[],o,n,m,l,k,j,i,h
+a1b:function(a,b,c){var u=0,t=P.W(-1),s,r=2,q,p=[],o,n,m,l,k,j,i,h,g
 var $async$yB=P.S(function(d,e){if(d===1){q=e
 u=r}while(true)switch(u){case 0:F.dN(C.p7,"cgi","url = "+a)
 switch(b){case C.jG:break
-case C.od:break}P.bE(self.getCookie())
-l=B.a10("https://fudao.qq.com/cgi-proxy/study_page/GetStudySummary?last_index=1",5000,"json",P.aW(["host","fudao.qq.com","cookieHeader",self.getCookie(),"accept","*","referer","https://fudao.qq.com/"],P.e,null),"get",1e5,C.kM)
-k=new U.A1(null,new L.DJ(H.b([],[L.hg]),new L.lu(),new L.lu(),new L.lu()),null,new Q.zR(),!1)
-k.bp$=l
-k.dK$=new B.xZ(H.b([],[W.en]))
-o=k
+case C.od:break}l=self.getCookie()
+P.bE(l)
+k=B.a10("https://fudao.qq.com/cgi-proxy/study_page/GetStudySummary?last_index=1",5000,"json",P.aW(["host","fudao.qq.com","cookieHeader",l,"accept","*","referer","https://fudao.qq.com/"],P.e,null),"get",1e5,C.kM)
+j=new U.A1(null,new L.DJ(H.b([],[L.hg]),new L.lu(),new L.lu(),new L.lu()),null,new Q.zR(),!1)
+j.bp$=k
+j.dK$=new B.xZ(H.b([],[W.en]))
+o=j
 r=4
-l=B.a2s(null,null,null,null,null,null,null,null,null,null,null,null,null)
-l.a="GET"
+k=B.a2s(null,null,null,null,null,null,null,null,null,null,null,null,null)
+k.a="GET"
 u=7
-return P.a5(J.a0I(o,"https://fudao.qq.com/cgi-proxy/study_page/GetStudySummary?last_index=1",null,null,l,null,null),$async$yB)
+return P.a5(J.a0I(o,"https://fudao.qq.com/cgi-proxy/study_page/GetStudySummary?last_index=1",null,null,k,null,null),$async$yB)
 case 7:n=e
 c.$3(n.d,n.e,n.a)
 r=2
 u=6
 break
 case 4:r=3
-h=q
-i=H.G(h)
-if(i instanceof K.f0){m=i
+g=q
+h=H.G(g)
+if(h instanceof K.f0){m=h
 if(m.b!=null){P.bE(m.b.a)
 P.bE(m.b.b)
 P.bE(m.b.c)}else{P.bE(m.a)
-P.bE(J.VM(m))}}else throw h
+P.bE(J.VM(m))}}else throw g
 u=6
 break
 case 3:u=2
@@ -40023,11 +40024,12 @@ while(true)switch(u){case 0:P.bE("========= ---------- =================")
 K.qD(s.c).Ar("/coursebreak",null,P.m)
 return P.U(null,t)}})
 return P.V($async$pw,t)},
-O:function(a){var u,t=null,s=new P.ao(20,20)
-s=M.a8(t,t,t,t,S.ee(t,new K.aH(s,s,s,s),H.b([new O.cb(0.5,new P.A(4278766442),new P.q(0,1),4)],[O.cb]),t,t,t,C.H),40,new V.ad(20,0,20,10),t,40)
-u=L.d0(this.a.c,t,t,t,A.c4(t,t,C.o,t,t,t,t,t,t,t,t,14,t,t,t,t,!0,t,t,t,t,t,t),t)
-P.bE(self.getCookie())
-return D.iF(t,T.h3(H.b([s,u,L.d0(H.a(self.getCookie()),t,t,t,t,t)],[N.ab]),C.a_,C.am),C.P,!1,t,t,t,t,t,t,t,t,t,t,this.gIW(),t,t,t,t)},
+O:function(a){var u,t,s=null,r=new P.ao(20,20)
+r=M.a8(s,s,s,s,S.ee(s,new K.aH(r,r,r,r),H.b([new O.cb(0.5,new P.A(4278766442),new P.q(0,1),4)],[O.cb]),s,s,s,C.H),40,new V.ad(20,0,20,10),s,40)
+u=L.d0(this.a.c,s,s,s,A.c4(s,s,C.o,s,s,s,s,s,s,s,s,14,s,s,s,s,!0,s,s,s,s,s,s),s)
+t=self.getCookie()
+P.bE(t)
+return D.iF(s,T.h3(H.b([r,u,L.d0(H.a(t),s,s,s,s,s)],[N.ab]),C.a_,C.am),C.P,!1,s,s,s,s,s,s,s,s,s,s,this.gIW(),s,s,s,s)},
 $aaa:function(){return[Q.t5]}}
 X.hT.prototype={
 aN:function(){return new X.uY(H.b(["\u4e0a\u8bfe","\u4f5c\u4e1a/\u8003\u8bd5","\u7b14\u8bb0","\u5b66\u4e60\u62a5\u544a"],[P.e]),C.p)}}
