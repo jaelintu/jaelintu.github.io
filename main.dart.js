@@ -8347,7 +8347,7 @@ var $async$yB=P.S(function(d,e){if(d===1){q=e
 u=r}while(true)switch(u){case 0:F.dN(C.p7,"cgi","url = "+a)
 switch(b){case C.jG:break
 case C.od:break}P.bE(self.getCookie())
-l=B.a10("https://fudao.qq.com/cgi-bin/getStudySummary?last_index=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",5000,"json",P.aW(["host","fudao.qq.com","cookieHeader",self.getCookie(),"accept","*","referer","https://fudao.qq.com/"],P.e,null),"get",1e5,C.kM)
+l=B.a10("https://fudao.qq.com/cgi-proxy/study_page/GetStudySummary?last_index=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",5000,"json",P.aW(["host","fudao.qq.com","cookieHeader",self.getCookie(),"accept","*","referer","https://fudao.qq.com/"],P.e,null),"get",1e5,C.kM)
 k=new U.A1(null,new L.DJ(H.b([],[L.hg]),new L.lu(),new L.lu(),new L.lu()),null,new Q.zR(),!1)
 k.bp$=l
 k.dK$=new B.xZ(H.b([],[W.en]))
@@ -8356,7 +8356,7 @@ r=4
 l=B.a2s(null,null,null,null,null,null,null,null,null,null,null,null,null)
 l.a="GET"
 u=7
-return P.a5(J.a0I(o,"https://fudao.qq.com/cgi-bin/getStudySummary?last_index=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",null,null,l,null,null),$async$yB)
+return P.a5(J.a0I(o,"https://fudao.qq.com/cgi-proxy/study_page/GetStudySummary?last_index=1&_t=1558951322931&platform=2&terminal=rn_ios&version=123456&app_version=123456&os_version=12.2&client=1",null,null,l,null,null),$async$yB)
 case 7:n=e
 c.$3(n.d,n.e,n.a)
 r=2
