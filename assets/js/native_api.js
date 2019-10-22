@@ -41,3 +41,7 @@ function callNativeFunction(currentCount) {
 
   return currentCount;
 }
+
+function getCookie() {
+  return document.cookie;
+}
