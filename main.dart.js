@@ -8514,7 +8514,7 @@ a1P:function(a,b,c){var u=0,t=P.a_(-1),s,r=2,q,p=[],o,n,m,l,k,j,i,h
 var $async$zm=P.W(function(d,e){if(d===1){q=e
 u=r}while(true)switch(u){case 0:F.ed(C.po,"cgi","url = "+a)
 switch(b){case C.h6:break
-case C.or:break}l=B.a1G("https://fudao.qq.com/cgi-proxy/study_page/GetStudySummary?last_index=1",5e4,"json",P.b2(["host","fudao.qq.com","cookie","uin=2271794617;skey=M33QXF3rQj;userType=1;_guest_type=1003;isavaibleinstore=1;iapreviewtype=402;isipadhd=0;plCache=;uid_uin=2271794617;uid_type=0;p_uin=2271794617;p_skey=RbPV8HwqBO8UzoTn3XZANk3*48C0hdUzVBgNrxA0dUw_;from_source=none","accept","*","referer","https://fudao.qq.com/"],P.i,null),"get",1e5,C.lv)
+case C.or:break}l=B.a1G("https://fudao.qq.com/cgi-proxy/study_page/GetStudySummary?last_index=1",5e4,"json",P.b2(["host","fudao.qq.com","cookie",self.getCookie(),"accept","*","referer","https://fudao.qq.com/"],P.i,null),"get",1e5,C.lv)
 k=new U.AP(null,new L.Eu(H.c([],[L.i5]),new L.mu(),new L.mu(),new L.mu()),null,new Q.AB(),!1)
 k.bm$=l
 k.rv$=new B.yM(H.c([],[W.eR]))
@@ -40969,7 +40969,7 @@ if(u.ch!==C.bp){u.y.eX(0)
 u.up()}},
 $S:0}
 D.F9.prototype={
-O:function(a){var u=this,t=null,s=[N.aR],r=T.n9(H.c([M.ak(t,new T.zx(M.ak(C.K,U.Xo(u.e,C.K,t,40,40),u.f,t,t,40,t,t,40),t),t,t,t,t,new V.al(0,0,16,0),t,t),T.Uc(M.ak(t,T.ji(H.c([new T.fz(new S.K(0,1/0,24,1/0),M.ak(C.fF,L.dm(u.c,2,C.bx,!1,A.ci(t,t,new P.A(4278190080),t,t,t,t,t,t,t,t,16,t,t,t,t,!0,t,t,t,t,t,t),C.dB),t,t,t,t,t,t,t),t),M.ak(C.fF,L.dm(u.d,t,C.bx,!1,A.ci(t,t,new P.A(4286019447),t,t,t,t,t,t,t,t,14,t,t,t,t,!0,t,t,t,t,t,t),C.dB),t,t,t,20,t,t,t)],s),C.c8,C.aB),t,t,t,t,new V.al(0,0,16,0),t,t))],s),C.c8,C.aB)
+O:function(a){var u=this,t=null,s=[N.aR],r=T.n9(H.c([M.ak(t,new T.zx(M.ak(C.K,U.Xo(u.e,C.K,t,40,40),u.f,t,t,40,t,t,40),t),t,t,t,t,new V.al(0,0,16,0),t,t),T.Uc(M.ak(t,T.ji(H.c([new T.fz(new S.K(0,1/0,24,1/0),M.ak(C.fF,L.dm(H.a(u.c)+"aaa",2,C.bx,!1,A.ci(t,t,new P.A(4278190080),t,t,t,t,t,t,t,t,16,t,t,t,t,!0,t,t,t,t,t,t),C.dB),t,t,t,t,t,t,t),t),M.ak(C.fF,L.dm(u.d,t,C.bx,!1,A.ci(t,t,new P.A(4286019447),t,t,t,t,t,t,t,t,14,t,t,t,t,!0,t,t,t,t,t,t),C.dB),t,t,t,20,t,t,t)],s),C.c8,C.aB),t,t,t,t,new V.al(0,0,16,0),t,t))],s),C.c8,C.aB)
 return M.ak(t,T.iA(C.bz,H.c([r,new T.la(C.j1,t,t,M.ak(t,t,new P.A((4292730333&(u.r?4294967295:16777215)&4294967295)>>>0),t,t,0.5,t,t,t),t)],s),C.bv),t,t,t,88,t,new V.al(16,12,0,0),t)}}
 F.Mi.prototype={
 O:function(a){var u=null
