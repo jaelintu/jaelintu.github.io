@@ -8505,7 +8505,7 @@ a1N:function(a,b,c){var u=0,t=P.a_(-1),s,r=2,q,p=[],o,n,m,l,k,j,i,h
 var $async$zi=P.W(function(d,e){if(d===1){q=e
 u=r}while(true)switch(u){case 0:F.ec(C.pn,"cgi","url = "+a)
 switch(b){case C.h6:break
-case C.oq:break}l=B.a1E("https://fudao.qq.com/cgi-proxy/study_page/GetStudySummary?last_index=1",5e4,"json",P.b4(["host","fudao.qq.com","cookie","uin=2271794617;skey=MxFGIqVSb5;whistle_nohost_env=lqlongli/%E4%B8%8A%E8%AF%BE%E9%A1%B5%E4%BC%98%E5%8C%96;userType=1;_guest_type=1003;isavaibleinstore=1;iapreviewtype=402;isipadhd=0;plCache=;uid_uin=2271794617;uid_type=0;p_uin=2271794617;p_skey=jDLJEsh8R6Yp6koo33LNHCqQjBTYJPX90KGRCTAser0_;pagelocation=mail.0","accept","*","referer","https://fudao.qq.com/"],P.i,null),"get",1e5,C.lv)
+case C.oq:break}l=B.a1E("https://fudao.qq.com/cgi-proxy/study_page/GetStudySummary?last_index=1",5e4,"json",P.b4(["host","fudao.qq.com","cookie","cookie","accept","*","referer","https://fudao.qq.com/"],P.i,null),"get",1e5,C.lv)
 k=new U.AN(null,new L.Es(H.c([],[L.i5]),new L.mu(),new L.mu(),new L.mu()),null,new Q.Az(),!1)
 k.bl$=l
 k.nn$=new B.yI(H.c([],[W.eR]))
