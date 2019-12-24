@@ -40888,8 +40888,8 @@ x4:function(){var u=this.Q
 if(u==null)return 0
 return u.Pc()},
 GX:function(a,b,c){return this.Q.ok(b,c)},
-Jr:function(a){X.WE("cmd",null,C.na,C.h6,null)
-self.callNativeFunction("method",null)
+Jr:function(a){self.callNativeFunction("method",null)
+X.WE("cmd",null,C.na,C.h6,null)
 return},
 G1:function(){var u=null,t=new P.aC(18,18),s=[N.aT]
 return T.lw(H.c([T.lw(H.c([this.cx.wG("lib/images/error_loading.png","\u52a0\u8f7d\u5931\u8d25"),M.al(u,u,u,u,u,12,u,u,u),new N.Ck(new B.RE(this),u,u,u,C.j,u,new P.B(4278766442),u,u,u,u,u,u,M.al(C.K,L.eo("\u91cd\u65b0\u52a0\u8f7d",u,u,u,A.cs(u,u,u,u,u,u,u,u,u,u,u,14,u,u,u,u,!0,u,u,u,u,u,u),u),u,u,u,28,u,u,88),u,u,new X.bR(C.p,new K.aL(t,t,t,t)),C.aG,u,!1,u,u)],s),C.al,C.b2)],s),C.al,C.fe)},
