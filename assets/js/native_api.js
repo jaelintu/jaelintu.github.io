@@ -18,18 +18,18 @@ function callNativeFunction(method, param) {
   也就是 api1(); api2(); api3(); api4(); 的连续调用,
   只有 api1 和 api3 会真正调用到客户端
   */
-  //jsbridgeNode.onload = failCallback;
-  // jsbridgeNode.src = url;
+  jsbridgeNode.onload = failCallback;
+  jsbridgeNode.src = url;
 
-  // //201707有时候根元素没有appendChild
-  // var root = document.body || document.documentElement;
-  // root.appendChild && root.appendChild(jsbridgeNode);
+  //201707有时候根元素没有appendChild
+  var root = document.body || document.documentElement;
+  root.appendChild && root.appendChild(jsbridgeNode);
 
-  // setTimeout(function() {
-  //   jsbridgeNode &&
-  //     jsbridgeNode.parentNode &&
-  //     jsbridgeNode.parentNode.removeChild(jsbridgeNode);
-  // }, 500);
+  setTimeout(function() {
+    jsbridgeNode &&
+      jsbridgeNode.parentNode &&
+      jsbridgeNode.parentNode.removeChild(jsbridgeNode);
+  }, 500);
 
   //201707有时候根元素没有appendChild
   var root = document.body || document.documentElement;
