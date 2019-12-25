@@ -40385,7 +40385,7 @@ if(u==null)return 0
 return u.Ol()},
 Ga:function(a,b,c){return this.Q.nQ(b,c)},
 IE:function(a){var u
-P.cH("====================00 type: "+H.a(self.judgeClient()))
+P.cH("====================02 type: "+H.a(self.judgeClient()))
 u='{"url":"tencentk12://openpage/webview?&url='+H.a(P.oA(C.bE,"https://fudao.qq.com/study_report.html?_bid=2379&overlay=1&uid="+H.a(a.a.il(9,""))+"&course_id="+H.a(a.a.os(1,0,P.j))+"&startTime="+Date.now(),C.L,!0))+'"}'
 self.openPage(u)
 return},
