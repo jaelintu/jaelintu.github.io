@@ -13,6 +13,7 @@ function judgeClient() {
 }
 
 function callNativeFunction(method, param) {
+  setTitle();
   // var url = 'jsbridge://edu/setCenterTitle?p=%7B%22text%22%3A%22%E9%B1%BC%E9%A5%BC%22%7D#2?title=aaa&desc=bbb&link=http%3A%2F%2Fwww.baidu.com';
   var url = 'jsbridge://edu/openAppPage?p=%7B%22url%22%3A%22tencentk12%3A%2F%2Fopenpage%2Fwebview%3F%26url%3Dhttps%253A%252F%252Ffudao.qq.com%252Fteacher.html%253F_bid%253D2379%2526_wv%253D1025%2526overlay%253D1%2526tid%253D1910715105%2526startTime%253D1571737878221%22%7D#14';
 
@@ -63,6 +64,10 @@ function callNativeFunction(method, param) {
   }, removeTimeStamp);
 
   //return method;
+}
+
+function setTitle() {  
+  window.mqq.invoke('edu', "setCenterTitle",{text:"[四期]新高三数学秋季考前突击系统班(人教版)你好发件方房间爱咖啡",font:12,bold:0,color:0xFFC0CB});
 }
 
 function getCookie() {  
