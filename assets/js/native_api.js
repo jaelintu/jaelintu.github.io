@@ -25,6 +25,7 @@ function callNativeFunction(method, param) {
   //var url = 'jsbridge://edu/openAppPage?p=%7B%22url%22%3A%22tencentk12%3A%2F%2Fopenpage%2Fwebview%3F%26url%3Dhttps%253A%252F%252Ffudao.qq.com%252Fteacher.html%253F_bid%253D2379%2526_wv%253D1025%2526overlay%253D1%2526tid%253D1910715105%2526startTime%253D1571737878221%22%7D#14';
 
   var url = 'jsbridge://edu/' + method + '?p=' + param;
+  console.log(url);
 
   var jsbridgeNode = document.createElement('iframe');
   var removeTimeStamp;

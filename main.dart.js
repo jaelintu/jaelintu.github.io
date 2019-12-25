@@ -40897,7 +40897,7 @@ if(u==null)return 0
 return u.Pc()},
 GX:function(a,b,c){return this.Q.ok(b,c)},
 Jr:function(a){var u
-P.cu("=====================9 type: "+H.a(self.judgeClient()))
+P.cu("=====================8 type: "+H.a(self.judgeClient()))
 u='{"url":"tencentk12://openpage/webview?&url='+H.a(P.oL(C.bE,"https://fudao.qq.com/teacher.html?_bid=2379&_wv=1025&overlay=1&tid=1910715105&startTime=1571737878221&grayshadow=1",C.M,!0))+"}#14"
 self.openPage(u)
 return},
