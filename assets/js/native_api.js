@@ -20,7 +20,7 @@ console.log(url);
   也就是 api1(); api2(); api3(); api4(); 的连续调用,
   只有 api1 和 api3 会真正调用到客户端
   */
-  jsbridgeNode.onload = failCallback;
+  //jsbridgeNode.onload = failCallback;
   jsbridgeNode.src = url;
 
   //201707有时候根元素没有appendChild
@@ -33,26 +33,26 @@ console.log(url);
       jsbridgeNode.parentNode.removeChild(jsbridgeNode);
   }, 500);
 
-  //201707有时候根元素没有appendChild
-  var root = document.body || document.documentElement;
-  root.appendChild && root.appendChild(jsbridgeNode);
+  // //201707有时候根元素没有appendChild
+  // var root = document.body || document.documentElement;
+  // root.appendChild && root.appendChild(jsbridgeNode);
 
-  /*
-  android 这里必须先添加到页面, 然后再绑定 onload 和设置 src
-  1. 先设置 src 再 append 到页面, 会导致在接口回调(callback)中嵌套调用 api会失败,
-  iframe会直接当成普通url来解析
-  2. 先设置onload 在 append , 会导致 iframe 先触发一次 about:blank 的 onload 事件
+  // /*
+  // android 这里必须先添加到页面, 然后再绑定 onload 和设置 src
+  // 1. 先设置 src 再 append 到页面, 会导致在接口回调(callback)中嵌套调用 api会失败,
+  // iframe会直接当成普通url来解析
+  // 2. 先设置onload 在 append , 会导致 iframe 先触发一次 about:blank 的 onload 事件
 
-  */
-  jsbridgeNode.onload = failCallback;
-  jsbridgeNode.src = url;
+  // */
+  // jsbridgeNode.onload = failCallback;
+  // jsbridgeNode.src = url;
 
-  // android 捕获了iframe的url之后, 也是中断 js 进程的, 所以这里可以用个 setTimeout 0 来删除 iframe
-  setTimeout(function() {
-    jsbridgeNode &&
-      jsbridgeNode.parentNode &&
-      jsbridgeNode.parentNode.removeChild(jsbridgeNode);
-  }, 0);
+  // // android 捕获了iframe的url之后, 也是中断 js 进程的, 所以这里可以用个 setTimeout 0 来删除 iframe
+  // setTimeout(function() {
+  //   jsbridgeNode &&
+  //     jsbridgeNode.parentNode &&
+  //     jsbridgeNode.parentNode.removeChild(jsbridgeNode);
+  // }, 0);
 
   return method;
 }
