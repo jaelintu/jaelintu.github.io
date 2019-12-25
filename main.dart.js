@@ -40897,8 +40897,8 @@ if(u==null)return 0
 return u.Pc()},
 GX:function(a,b,c){return this.Q.ok(b,c)},
 Jr:function(a){var u
-P.cu("====================12 type: "+H.a(self.judgeClient()))
-u='{"url":"tencentk12://openpage/webview?&url='+H.a(P.oL(C.bE,"https://fudao.qq.com/course_pay.html?_bid=2379&course_id=114169",C.M,!0))+"}"
+P.cu("====================13 type: "+H.a(self.judgeClient()))
+u='{"url":"tencentk12://openpage/webview?&url='+H.a(P.oL(C.bE,"https://fudao.qq.com/course_pay.html?_bid=2379&course_id=114169",C.M,!0))+'"}'
 self.openPage(u)
 return},
 G1:function(){var u=null,t=new P.aC(18,18),s=[N.aT]
