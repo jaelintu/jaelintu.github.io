@@ -40896,7 +40896,7 @@ x3:function(){var u=this.Q
 if(u==null)return 0
 return u.Pc()},
 GX:function(a,b,c){return this.Q.ok(b,c)},
-Jr:function(a){P.cu(self.getJSString())
+Jr:function(a){P.cu(self.judgeClient())
 self.callNativeFunction("method",new H.c1([null,null]))
 return},
 G1:function(){var u=null,t=new P.aC(18,18),s=[N.aT]
