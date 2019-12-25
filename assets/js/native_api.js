@@ -24,7 +24,6 @@ function callNativeFunction(method, param) {
     e.stopPropagation(); 
   }     
 
-
   if (judgeClient() == 'iOS') {
     /*
     ios 必须先赋值, 然后 append, 否者连续的 api调用会间隔着失败
