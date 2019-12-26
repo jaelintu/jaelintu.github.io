@@ -40456,8 +40456,8 @@ return new B.wn(new B.Lf(u),new O.rU(),C.dm,new Z.Af(),t,null,C.r)}}
 B.wn.prototype={
 glA:function(){return!0},
 aT:function(){this.D3()
-this.y.eV(0)
-this.uc()},
+if(self.isLogin()){this.y.eV(0)
+this.uc()}else self.login()},
 S:function(a){var u=this,t=u.ch,s=u.wR(),r=T.pB(H.c([u.cx.wu("lib/images/empty_note.png","\u6682\u65e0\u5b66\u4e60\u62a5\u544a")],[N.ba]),C.bw,C.fc)
 return new F.y5(t,new M.rI(s,u.gGH(u),u.gJ1(),u.cy,null),C.bv,u.FN(),r,null)},
 uc:function(){var u=this
@@ -40479,7 +40479,7 @@ if(t==null){t=new F.GK(P.cn(P.j,F.u7))
 t.JG()
 $.Xo=t}t.BZ("ReportReadedStudySummary",u,s.gJh())}},
 Jc:function(a){var u
-P.cJ("====================00 type: "+H.a(self.judgeClient()))
+P.cJ("====================12 type: "+H.a(self.judgeClient()))
 u=P.j
 this.JS(a.a.it(1,0,u))
 u='{"url":"tencentk12://openpage/webview?&url='+H.a(P.wD(C.c9,"https://fudao.qq.com/study_report.html?_bid=2379&overlay=1&uid="+H.a(a.a.iu(9,""))+"&course_id="+H.a(a.a.it(1,0,u))+"&startTime="+Date.now(),C.P,!0))+'"}'
