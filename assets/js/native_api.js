@@ -43,7 +43,7 @@ function webOpenUrl(url) {
 }
 
 function setTitle(title) {
-  callNativeFunction('setCenterTitle', title);
+  callNativeFunction('setCenterTitle', encodeURIComponent(title));
 }
 
 function openPage(page) {

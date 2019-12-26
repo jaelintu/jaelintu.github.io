@@ -40463,7 +40463,8 @@ return new B.wq(new B.ty(u),new O.rX(),C.dn,new Z.Ah(),t,null,C.r)}}
 B.wq.prototype={
 glC:function(){return!0},
 aT:function(){this.D6()
-if(self.isLogin()){this.y.eV(0)
+if(self.isLogin()){self.setTitle('{"text":\u5b66\u4e60\u62a5\u544a,"font":18}')
+this.y.eV(0)
 this.ud()}else self.login()},
 S:function(a){var u=this,t=u.ch,s=u.wT(),r=T.pD(H.c([u.cx.ww("lib/images/empty_note.png","\u6682\u65e0\u5b66\u4e60\u62a5\u544a")],[N.ba]),C.bv,C.fd)
 return new F.y8(t,new M.rL(s,u.gGN(u),u.gJ9(),u.cy,null),C.bu,u.FT(),r,null)},
@@ -40472,7 +40473,7 @@ r.ch=C.id
 u=r.y
 u.c=new B.Rj(r)
 u.d=new B.Rk(r)
-if($.Tz)X.Wb("study_page/GetStudySummary",u.gJ4(),C.jV,P.b0(["last_index",1],P.i,null))
+if($.Tz)X.Wb("study_page/GetStudySummary",u.gJ4(),C.jV,P.b0(["last_index",u.b+1],P.i,null))
 else{t=X.WM()
 t.un(0,u.b+1)
 s=$.GO
