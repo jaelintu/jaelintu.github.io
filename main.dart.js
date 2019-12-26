@@ -40463,7 +40463,7 @@ return new B.wq(new B.ty(u),new O.rX(),C.dn,new Z.Ah(),t,null,C.r)}}
 B.wq.prototype={
 glC:function(){return!0},
 aT:function(){this.D6()
-if(self.isLogin()){self.setTitle('{"text":\u5b66\u4e60\u62a5\u544a,"font":18}')
+if(self.isLogin()){self.setTitle('{"text":"\u5b66\u4e60\u62a5\u544a","font":18}')
 this.y.eV(0)
 this.ud()}else self.login()},
 S:function(a){var u=this,t=u.ch,s=u.wT(),r=T.pD(H.c([u.cx.ww("lib/images/empty_note.png","\u6682\u65e0\u5b66\u4e60\u62a5\u544a")],[N.ba]),C.bv,C.fd)
