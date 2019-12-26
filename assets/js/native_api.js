@@ -12,6 +12,26 @@ function judgeClient() {
   return client;
 }
 
+//判断是否登录
+function isLogin() {
+	return (
+		(!!getCookie('p_uin') && !!getCookie('p_skey')) ||
+		(!!getCookie('uin') && !!getCookie('skey')) ||
+		(!!getCookie('uid_uin') && !!getCookie('uid_a2'))
+	);
+}
+
+//跳转登录页
+function login(url = window.location.href) {
+	const loginPage = `https://fudao.qq.com/login.html?back_url=${encodeURIComponent(url)}`;
+
+	if (judgeClient() == 'PC') {
+		window.location.href = 'https://fudao.qq.com';
+	} else {
+		window.location.href = loginPage;
+	}
+}
+
 function setTitle(title) {
   callNativeFunction('setCenterTitle', title);
 }
@@ -76,8 +96,39 @@ function callNativeFunction(method, param) {
   //return method;
 }
 
-function getCookie() {  
+function getAllCookie() {  
   return document.cookie;
+}
+
+//获取cookie，会对 cookie value 进行 decodeURIComponent
+function getCookie(name) {
+	// const m = document.cookie.match(new RegExp(`(^| )${name}=([^;"]+)(;|$)`));
+	// return !m ? '' : decodeURIComponent(m[2]);
+	const m = document.cookie.match(new RegExp(`(^| )${name}=([^;]*)(;|$)`, 'g'));
+	if (!m) {
+		return '';
+	}
+
+	let cookie;
+	(m || []).some(i => {
+		const item = i.match(new RegExp(`(^| )${name}=([^;]*)(;|$)`));
+		cookie = decodeURIComponent(item[2]);
+		if (cookie === '""') {
+			return false;
+		}
+		return !item ? '' : decodeURIComponent(item[2]);
+	});
+
+	return cookie;
+}
+
+//获取cookie，会对 cookie value 进行 decodeURIComponent
+function getCookies(name) {
+	const m = document.cookie.match(new RegExp(`(^| )${name}=([^;]*)(;|$)`, 'g'));
+	return (m || []).map(i => {
+		const item = i.match(new RegExp(`(^| )${name}=([^;]*)(;|$)`));
+		return !item ? '' : decodeURIComponent(item[2]);
+	});
 }
 
 function putValue(key, value) {
